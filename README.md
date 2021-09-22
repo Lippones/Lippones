@@ -1,4 +1,5 @@
 [![Banner](https://i.pinimg.com/originals/e9/27/30/e9273076e999aa7b7186d2d17e956ab1.jpg)](https://github.com/Lippones)
+![](https://komarev.com/ghpvc/?username=Lippones&color=blueviolet
 
 ## Rede Sociais
 #### ____________________________________________________________________________________
@@ -6,7 +7,6 @@
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5533987194284&text=Ol%C3%A1)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg)
-![](https://komarev.com/ghpvc/?username=Lippones&color=blueviolet)
 
 ## Tecnologias
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
