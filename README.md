@@ -1,7 +1,3 @@
-[![Banner](https://i.pinimg.com/originals/e9/27/30/e9273076e999aa7b7186d2d17e956ab1.jpg)](https://github.com/Lippones)
-
-![](https://komarev.com/ghpvc/?username=Lippones&color=blueviolet)
-
 ## Rede Sociais
 #### ____________________________________________________________________________________
 
