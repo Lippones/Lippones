@@ -1,3 +1,12 @@
+## Olá pessoal 👋
+
+<! --
+- 🔭 Atualmente estou trabalhando em JB Software como desenvolvedor FullStack, faço Sistemas de informação na Univale e estou no 5° periodo.
+- 🌱 Atualmente estou aprendendo TypeScript, Node.js, React.js e React native.
+- 👯 Estou procurando colaborar em um projeto sigiloso, atualizarei em breve.
+- 📫 Como entrar em contato comigo: Minha redes sociais então logo abaixo.
+-->
+
 ## Rede Sociais
 #### ____________________________________________________________________________________
 
