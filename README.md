@@ -1,33 +1,19 @@
-## Olá pessoal 👋
+# 💫 About Me:
+<br>- 🔭 Atualmente estou trabalhando em JB Software como desenvolvedor FullStack, faço Sistemas de informação na Univale e estou no 5° periodo.<br>- 🌱 Atualmente estou aprendendo TypeScript, Node.js, React.js e React native.<br>- 👯 Estou procurando colaborar em um projeto sigiloso, atualizarei em breve.<br>- 📫 Como entrar em contato comigo: Minha redes sociais então logo abaixo.
 
-<! --
-- 🔭 Atualmente estou trabalhando em JB Software como desenvolvedor FullStack, faço Sistemas de informação na Univale e estou no 5° periodo.
-- 🌱 Atualmente estou aprendendo TypeScript, Node.js, React.js e React native.
-- 👯 Estou procurando colaborar em um projeto sigiloso, atualizarei em breve.
-- 📫 Como entrar em contato comigo: Minha redes sociais então logo abaixo.
--->
 
-## Rede Sociais
-#### ____________________________________________________________________________________
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/filipev.silva) [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/filipe-vieira-03199720b) [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?1=pt_BR&phone=5533998483690)
 
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?1=pt_BR&phone=5533998483690)
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg)
-
-## Tecnologias
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![NODEJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![MYSQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+# 💻 Tech Stack:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white) 
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-
-## GitHub Stats
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Lippones&show_icons=true&theme=radical)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Lippones)](https://github.com/anuraghazra/github-readme-stats)
-
-
-
-
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Lippones&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Lippones&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Lippones&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
