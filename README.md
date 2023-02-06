@@ -1,9 +1,9 @@
 [![MasterHead](https://github.com/Lippones/Lippones/blob/main/banner%20(1).png)](https://github.com/Lippones)
 
-<h1 align="centerr">💫 About Me: </h1>
+# 💫 About Me:
 <br>- 🔭 Atualmente estou trabalhando em JB Software como desenvolvedor FullStack, faço Sistemas de informação na Univale e estou no 5° periodo.<br>- 🌱 Atualmente estou aprendendo TypeScript, Node.js, React.js, Vue,js e React native.<br>- 👯 Estou coloborando em um projeto sigiloso, atualizarei em breve.<br>- 📫 Como entrar em contato comigo: Minha redes sociais então logo abaixo.
 
-<h2 align="centerr">🚀 More details</h2>
+## 🚀 More details
 Desenvolvedor Full Stack altamente capacitado e apaixonado por tecnologia, ofereço soluções inovadoras e de alta qualidade para ajudar as empresas a alcançarem seus objetivos de negócios. Com experiência sólida em Javascript, Vue.js, ReactJS e Node.js, estou pronto para enfrentar novos desafios e levar suas ideias ao próximo nível. Com uma mentalidade de aprendizado constante e paixão por resolver problemas complexos, estou animado para trabalhar em projetos ambiciosos e inovadores.
 
 
