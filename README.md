@@ -1,5 +1,5 @@
 # 💫 Sobre mim:
-Olá! 👋<br>Sou um Desenvolvedor Full-Stack, trabalhando atualmente na BTTIS onde uso minhas habilidades em Next.js e Node.js. Estou no 5° periodo do curso de Sistemas de Informação na Univale e tenho experiência prática com React Native.<br><br>Em minha trajetória de aprendizado contínuo, estou me aprofundando em TypeScript, Node.js, React, Next.js e React Native.<br><br>Para entrar em contato, encontrar minhas redes sociais linkadas abaixo:<br><br>👇 Minhas Redes Sociais 👇
+Olá! 👋<br>Sou um Desenvolvedor Full-Stack, trabalhando atualmente na BTTIS onde uso minhas habilidades em Next.js e Node.js. Estou no 8° periodo do curso de Sistemas de Informação na Univale e tenho experiência prática com React Native.<br><br>Em minha trajetória de aprendizado contínuo, estou me aprofundando em TypeScript, Node.js, React, Next.js e React Native.<br><br>Para entrar em contato, encontrar minhas redes sociais linkadas abaixo:<br><br>👇 Minhas Redes Sociais 👇
 
 ## 🌐 Social:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/filipev.silva) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/filipe-vieira-03199720b) 
