@@ -1,7 +1,7 @@
 # 💫 Sobre mim:
 Sou Filipe Vieira da Silva, Desenvolvedor Full Stack com 2 anos de experiência, atualmente trabalhando na BTTIS. Tenho bacharelado em Sistemas de Informação pela Univale.
 
-Minhas principais habilidades incluem Next.js e Node.js, e estou constantemente aprimorando meus conhecimentos em TypeScript, React, Next.js, Node.js e React Native.
+Minhas principais habilidades incluem TypeScript, React, Next.js, Node.js e Nest.js.
 
 Além do meu trabalho principal, estou sempre envolvido em projetos paralelos, como o desenvolvimento de micro SaaS e iniciativas independentes.
 
