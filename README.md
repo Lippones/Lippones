@@ -14,12 +14,7 @@
 
 <h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" width="25"/> <em>About Me</em></h2>
 
-<img src="https://cdnb.artstation.com/p/assets/images/images/042/415/777/original/oliver-goodenough-ezgif-com-gif-maker.gif?1634468806"
-     width="250"
-     height="250"
-     style="float: right; margin-left: 20px; border-radius: 12px;" />
-
-
+<img src="https://cdnb.artstation.com/p/assets/images/images/042/415/777/original/oliver-goodenough-ezgif-com-gif-maker.gif?1634468806" width="250" height="250" align="right" style="margin-left: 20px;" />
 
 <p>
 Olá! 👋 Sou <b>Filipe Vieira</b>, <b>Desenvolvedor Full Stack</b> com anos de experiência profissional, atualmente trabalhando na <b>BTTIS</b>.  
