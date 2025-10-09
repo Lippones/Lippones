@@ -25,6 +25,7 @@ Sou bacharel em <b>Sistemas de Informação</b> e tenho grande paixão por criar
 Meu foco principal é em <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, <b>Node.js</b> e <b>NestJS</b> — mas estou sempre explorando novas tecnologias e aprimorando minhas habilidades em arquitetura e DevOps.  
 Fora do trabalho, gosto de desenvolver produtos <b>micro SaaS</b> e projetos paralelos experimentais que desafiam minha criatividade e capacidade de resolver problemas.
 </p>
+
 ---
 
 <h2 align="center"><img src="https://cdn-icons-png.flaticon.com/512/889/889192.png" width="25"/> <em>Tech Stack</em></h2>
