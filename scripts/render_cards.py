@@ -31,6 +31,9 @@ DATA = ROOT / "data"
 ICONS = ROOT / "assets" / "icons"
 
 USER = "Lippones"
+# Conta de trabalho: o calendário dela é somado ao pessoal. Só entram as
+# contribuições privadas se "Include private contributions" estiver ligado lá.
+WORK_USER = "FilipeVDev"
 STATIC = os.environ.get("STATIC") == "1"
 
 # ---------------------------------------------------------------- conteúdo
@@ -302,7 +305,10 @@ def counter(x: float, y: float, value: int, cls: str, size: float,
 # ---------------------------------------------------------------- dados
 
 QUERY = """
-query($login:String!){user(login:$login){
+query($login:String!,$work:String!){
+work:user(login:$work){contributionsCollection{contributionCalendar{
+  weeks{contributionDays{date contributionCount}}}}}
+user(login:$login){
   contributionsCollection{contributionCalendar{totalContributions
     weeks{contributionDays{date contributionCount}}}}
   repositories(privacy:PUBLIC,ownerAffiliations:OWNER){totalCount}
@@ -323,7 +329,28 @@ def token() -> str | None:
         return None
 
 
+def merge_work(data: dict) -> dict:
+    """Soma o calendário da conta de trabalho no da pessoal, dia a dia."""
+    user, work = data["user"], data.get("work")
+    if not work:
+        return user
+    extra = {d["date"]: d["contributionCount"]
+             for w in work["contributionsCollection"]["contributionCalendar"]["weeks"]
+             for d in w["contributionDays"]}
+    cal = user["contributionsCollection"]["contributionCalendar"]
+    for w in cal["weeks"]:
+        for d in w["contributionDays"]:
+            d["contributionCount"] += extra.get(d["date"], 0)
+    cal["totalContributions"] = sum(d["contributionCount"] for w in cal["weeks"]
+                                    for d in w["contributionDays"])
+    return user
+
+
 def load_data() -> dict:
+    return merge_work(fetch_data())
+
+
+def fetch_data() -> dict:
     cache = DATA / "github.json"
     tok = token()
     if tok:
@@ -331,19 +358,20 @@ def load_data() -> dict:
             req = urllib.request.Request(
                 "https://api.github.com/graphql",
                 data=json.dumps({"query": QUERY,
-                                 "variables": {"login": USER}}).encode(),
+                                 "variables": {"login": USER, "work": WORK_USER}}).encode(),
                 headers={"Authorization": f"bearer {tok}",
                          "Content-Type": "application/json"},
             )
             payload = json.load(urllib.request.urlopen(req, timeout=30))
             if payload.get("data", {}).get("user"):
                 DATA.mkdir(exist_ok=True)
-                cache.write_text(json.dumps(payload["data"]["user"], indent=1))
-                return payload["data"]["user"]
+                cache.write_text(json.dumps(payload["data"], indent=1))
+                return payload["data"]
             print("GraphQL sem dados:", payload.get("errors"))
         except Exception as exc:  # cai no cache
             print("falha ao buscar dados, usando cache:", exc)
-    return json.loads(cache.read_text())
+    cached = json.loads(cache.read_text())
+    return cached if "user" in cached else {"user": cached}
 
 
 def icon_path(slug: str | None) -> str | None:
@@ -569,7 +597,7 @@ def card_activity(user: dict) -> str:
     best_key = max(months, key=lambda k: months[k])
     best = months[best_key]
 
-    b = [frame(W, H), heading("Atividade · últimos 12 meses", P, 62, W - 2 * P, 100)]
+    b = [frame(W, H), heading("Atividade · pessoal + trabalho · últimos 12 meses", P, 62, W - 2 * P, 100)]
     stats = [
         (total, "contribuições"),
         (best, f"no melhor mês ({MONTHS[best_key[1] - 1]})"),
@@ -652,7 +680,8 @@ def card_heatmap(user: dict) -> str:
     b.append(f'<text x="{lx + 5 * step + 7:.1f}" y="{gy + cell - 2:.1f}" '
              f'font-size="12" class="r dim">mais</text></g>')
     H = int(gy + cell + 30)
-    return svg(W, H, frame(W, H) + "".join(b), "r", "Gráfico de contribuições")
+    return svg(W, H, frame(W, H) + "".join(b), "r",
+               "Gráfico de contribuições (pessoal + trabalho)")
 
 
 def card_repo(i: int, repo: dict) -> str:
