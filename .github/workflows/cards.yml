@@ -1,0 +1,36 @@
+name: Atualizar cards do README
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # todo dia, 03:17 em Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/render_cards.py", "fonts/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install fonttools==4.60.1
+      - name: Gerar cards
+        env:
+          # PROFILE_TOKEN (PAT opcional) inclui contribuições privadas, se você liberar no perfil
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/render_cards.py
+      - name: Commitar se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A cards README.md data assets
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: atualiza cards do README"
+            git push
+          fi
