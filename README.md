@@ -7,7 +7,7 @@
   <a href="https://www.lippe.dev"><img src="./cards/tile-portfolio.svg" width="32.5%" alt="Portfólio" /></a>
 </p>
 
-<img src="./cards/about.svg" width="100%" alt="Não acredito em app bonito que trava. Interface é o que a pessoa vê; o resto é o que faz ela voltar amanhã." />
+<img src="./cards/about.svg" width="100%" alt="Sobre: Olá! 👋 Sou Filipe Vieira, desenvolvedor mobile e full-stack com 4 anos de experiência, hoje Tech Lead de Mobile e Backoffice na Inbazz. Sou bacharel em Sistemas de Informação." />
 
 <img src="./cards/career.svg" width="100%" alt="Carreira" />
 

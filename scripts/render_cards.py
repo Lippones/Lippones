@@ -50,17 +50,17 @@ TILES = [
     ("portfolio", "Portfólio", "lippe.dev"),
 ]
 
-ABOUT_LEAD = (
-    "Não acredito em app bonito que trava. Interface é o que a pessoa vê; "
-    "o resto é o que faz ela voltar amanhã."
-)
 ABOUT_BODY = [
-    "Sou full-stack em **TypeScript**, com foco em **mobile**. Hoje lidero "
-    "mobile e backoffice na **Inbazz**: cheguei para reconstruir o app dos "
-    "creators e fiz isso sozinho, de FlutterFlow para **React Native**, com o "
-    "app antigo no ar até o novo assumir.",
-    "Antes foram três anos de TypeScript, React e Node na bttis, o que me "
-    "deixa confortável em ir até a API quando o app precisa.",
+    "Olá! 👋 Sou **Filipe Vieira**, **desenvolvedor mobile e full-stack** com 4 "
+    "anos de experiência, hoje **Tech Lead de Mobile e Backoffice na Inbazz**. "
+    "Sou bacharel em **Sistemas de Informação**.",
+    "Na Inbazz, reconstruí sozinho o app dos creators, de FlutterFlow para "
+    "**React Native**, sem tirar o app antigo do ar até o novo assumir. Antes "
+    "foram três anos como full-stack na **bttis**, com TypeScript, React, Next, "
+    "Nest e Docker, e antes disso dois anos de frontend.",
+    "Meu foco é **React Native**, **TypeScript**, **Next.js** e **NestJS**, e "
+    "gosto de ir até a API quando o app precisa. Fora do trabalho, desenvolvo "
+    "produtos **micro SaaS** e projetos paralelos experimentais.",
 ]
 ABOUT_FACTS = [
     ("Experiência", "4 anos"),
@@ -444,22 +444,15 @@ def card_about() -> str:
     b = []
     y = 62
     head = heading("Sobre", P, y, W - 2 * P, 100)
-    y += 62
-    lead = wrap([(w, "d") for w in ABOUT_LEAD.split()], 27, col_w, "d")
+    y += 50
     rows, n = [], 0
-    for ln in lead:
-        rows.append(line_svg(ln, P - 1, y, 27, {"d": "d fg"},
-                             f' letter-spacing="-0.025em" class="rise"{delay(200 + n * 80)}'))
-        y += 36
-        n += 1
-    y += 18
     for para in ABOUT_BODY:
-        for ln in wrap(rich_words(para), 16, col_w):
-            rows.append(line_svg(ln, P, y, 16, {"r": "r mu", "b": "b so"},
+        for ln in wrap(rich_words(para), 17, col_w):
+            rows.append(line_svg(ln, P, y, 17, {"r": "r mu", "b": "b fg"},
                                  f' class="rise"{delay(200 + n * 70)}'))
-            y += 27
+            y += 29
             n += 1
-        y += 12
+        y += 14
     text_bottom = y
 
     fy = 124 - 20
@@ -475,7 +468,7 @@ def card_about() -> str:
         fy += 58
     H = int(max(text_bottom, fy) + 22)
     b = [frame(W, H), head] + rows + facts
-    alt = ABOUT_LEAD + " " + " ".join(p.replace("**", "") for p in ABOUT_BODY)
+    alt = " ".join(p.replace("**", "") for p in ABOUT_BODY)
     return svg(W, H, "".join(b), "rbd", alt)
 
 
@@ -734,7 +727,7 @@ def readme(repos: list[dict]) -> str:
     repo_rows = "\n".join(
         f'  <a href="{r["url"]}">{img(f"repo-{i + 1}.svg", "49.5%", r["name"])}</a>'
         for i, r in enumerate(repos))
-    about_alt = ABOUT_LEAD
+    about_alt = "Sobre: " + ABOUT_BODY[0].replace("**", "")
     return f"""<!-- Gerado por scripts/render_cards.py. Não edite à mão. -->
 <a href="{LINKS["portfolio"]}">{img("hero.svg", "100%", f'{HERO["name"]}, {HERO["role"]}')}</a>
 
