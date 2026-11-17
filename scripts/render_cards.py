@@ -46,7 +46,7 @@ HERO = {
 
 TILES = [
     ("linkedin", "LinkedIn", "/in/filipe-vieira-dev"),
-    ("instagram", "Instagram", "@filipev.silva"),
+    ("x", "X", "@Filipe64285"),
     ("portfolio", "Portfólio", "lippe.dev"),
 ]
 
@@ -711,7 +711,7 @@ def main() -> None:
 
 LINKS = {
     "linkedin": "https://www.linkedin.com/in/filipe-vieira-dev/",
-    "instagram": "https://instagram.com/filipev.silva",
+    "x": "https://x.com/Filipe64285",
     "portfolio": "https://www.lippe.dev",
 }
 

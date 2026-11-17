@@ -3,7 +3,7 @@
 
 <p>
   <a href="https://www.linkedin.com/in/filipe-vieira-dev/"><img src="./cards/tile-linkedin.svg" width="32.5%" alt="LinkedIn" /></a>
-  <a href="https://instagram.com/filipev.silva"><img src="./cards/tile-instagram.svg" width="32.5%" alt="Instagram" /></a>
+  <a href="https://x.com/Filipe64285"><img src="./cards/tile-x.svg" width="32.5%" alt="X" /></a>
   <a href="https://www.lippe.dev"><img src="./cards/tile-portfolio.svg" width="32.5%" alt="Portfólio" /></a>
 </p>
 
